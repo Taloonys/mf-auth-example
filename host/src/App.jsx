@@ -23,7 +23,7 @@ const Welcome  = lazy(() => import('users/Welcome')
 );
 
 
-const TaskList = lazy(() => import('users/TaskList')
+const TaskList = lazy(() => import('tasks/TaskList')
   .catch(() => {
     return {
       default:() => <div className="error">TaskList component is not available</div>
